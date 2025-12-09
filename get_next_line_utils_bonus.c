@@ -6,11 +6,12 @@
 /*   By: aantari <aantari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 09:37:59 by aantari           #+#    #+#             */
-/*   Updated: 2025/12/09 16:36:42 by aantari          ###   ########.fr       */
+/*   Updated: 2025/12/09 21:03:17 by aantari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
+
 size_t	ft_strlen(char *s)
 {
 	size_t	i;
@@ -42,6 +43,7 @@ char	*ft_strdup(char *s)
 	str[i] = '\0';
 	return (str);
 }
+
 char	*ft_strjoin(char *rest, char *buffer)
 {
 	size_t	i;
@@ -69,6 +71,7 @@ char	*ft_strjoin(char *rest, char *buffer)
 	str[i] = '\0';
 	return (str);
 }
+
 char	*ft_strchr(char *rest, int c)
 {
 	size_t	i;
@@ -86,6 +89,7 @@ char	*ft_strchr(char *rest, int c)
 		return (rest + i);
 	return (NULL);
 }
+
 char	*ft_substr(char *s, unsigned int start, size_t len)
 {
 	char	*str;
@@ -109,4 +113,3 @@ char	*ft_substr(char *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-

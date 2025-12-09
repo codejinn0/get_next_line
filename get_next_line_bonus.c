@@ -6,7 +6,7 @@
 /*   By: aantari <aantari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 09:37:09 by aantari           #+#    #+#             */
-/*   Updated: 2025/12/09 19:06:48 by aantari          ###   ########.fr       */
+/*   Updated: 2025/12/09 20:52:52 by aantari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static char	*read_and_join(int fd, char *buffer, char *rest)
 	{
 		bytes = read(fd, buffer, BUFFER_SIZE);
 		if (bytes == 0)
-			break;
+			break ;
 		if (bytes == -1)
 			return (free(buffer), free(rest), NULL);
 		buffer[bytes] = '\0';
@@ -66,7 +66,7 @@ static char	*update_rest(char *rest)
 	len = ft_strlen(rest + pos + 1);
 	newrest = ft_substr(rest, pos + 1, len);
 	free(rest);
-    rest = newrest;
+	rest = newrest;
 	return (newrest);
 }
 
