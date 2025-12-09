@@ -6,7 +6,7 @@
 /*   By: aantari <aantari@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 09:36:24 by aantari           #+#    #+#             */
-/*   Updated: 2025/12/09 14:30:35 by aantari          ###   ########.fr       */
+/*   Updated: 2025/12/09 15:12:56 by aantari          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ char	*ft_strdup(char *s)
 	size_t	len;
 	char	*str;
 
-	if(!s)
-	return (NULL);
+	if (!s)
+		return (NULL);
 	len = ft_strlen(s);
 	i = 0;
 	str = malloc(sizeof(char) * (len + 1));
